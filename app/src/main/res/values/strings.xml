@@ -1,12 +1,13 @@
 <resources>
     <string name="app_name">PatPhoto</string>
     <string name="text_select_start">Would you like to start selecting?</string>
-    <string name="text_favorite_pet">Would you like to start selecting?</string>
+    <string name="text_favorite_pet"> What is your favorite pet?</string>
     <string name="check_start">START</string>
     <string name="radio_dog">DOG</string>
     <string name="radio_cat">CAT</string>
-    <string name="radio_rabbit">RABBIT</string>]
+    <string name="radio_rabbit">RABBIT</string>
     <string name="btn_done">DONE</string>
+
 
 
 
