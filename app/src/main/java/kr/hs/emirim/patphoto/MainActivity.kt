@@ -4,11 +4,7 @@ import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import android.widget.Button
-import android.widget.CheckBox
-import android.widget.ImageView
-import android.widget.LinearLayout
-import android.widget.RadioGroup
+import android.widget.*
 
 class MainActivity : AppCompatActivity() {
     lateinit var checkStart:CheckBox
@@ -34,7 +30,14 @@ class MainActivity : AppCompatActivity() {
             }else{
                 linear.visibility = View.INVISIBLE
             }
-
+        }
+        btnDone.setOnClickListener {
+            when(rg.checkedRadioButtonId){
+                R.id.radio_dog -> imgv.setImageResource(R.drawable.dog)
+                R.id.radio_cat -> imgv.setImageResource(R.drawable.cat)
+                R.id.radio_rabbit -> imgv.setImageResource(R.drawable.rab)
+                else -> Toast.makeText(applicationContext, "check a radio button", Toast.LENGTH_SHORT).show()
+            }
         }
     }
 }
