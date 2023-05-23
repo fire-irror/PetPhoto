@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="@dimen/padding_medium"
+    android:padding="@dimen/padding_small"
     tools:context=".MainActivity">
 
     <TextView
@@ -15,8 +15,8 @@
         android:textSize="@dimen/text_size_large"
         android:layout_marginBottom="@dimen/margin_small"/>
 
-    <CheckBox
-        android:id="@+id/check_start"
+    <Switch
+        android:id="@+id/switch_start"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/check_start"
@@ -60,6 +60,15 @@
                 android:text="@string/radio_rabbit"
                 android:textSize="@dimen/text_size_medium"/>
         </RadioGroup>
+
+        <ImageView
+            android:id="@+id/imgv"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/dog"
+            />
+
         <Button
             android:id="@+id/btn_done"
             android:layout_width="wrap_content"
@@ -67,14 +76,13 @@
             android:text="@string/btn_done"
             android:textStyle="bold"
             android:layout_margin="@dimen/margin_medium"/>
-        <ImageView
-            android:id="@+id/imgv"
-            android:layout_width="match_parent"
+        <Button
+            android:id="@+id/btn_exit"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:adjustViewBounds="true"
-            android:src="@drawable/dog"
-            />
-
+            android:text="@string/btn_exit"
+            android:textStyle="bold"
+            android:layout_margin="@dimen/margin_medium"/>
 
     </LinearLayout>
 </LinearLayout>

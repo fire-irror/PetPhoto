@@ -6,7 +6,8 @@
     <string name="radio_dog">DOG</string>
     <string name="radio_cat">CAT</string>
     <string name="radio_rabbit">RABBIT</string>
-    <string name="btn_done">DONE</string>
+    <string name="btn_done">종료</string>
+    <string name="btn_exit">처음으로</string>
 
 
 
